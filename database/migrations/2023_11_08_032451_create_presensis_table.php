@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('email');
             $table->string('type');
-            $table->string('synchronize')->default(null);
+            $table->string('synchronize')->nullable()->default(null);
             $table->timestamps();
         });
     }
