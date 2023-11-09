@@ -18,7 +18,6 @@ return new class extends Migration
             $table->float('heat_index');
             $table->timestampTz('time');
             $table->string('synchronize')->nullable()->default(null);
-            $table->timestamps();
         });
     }
 
