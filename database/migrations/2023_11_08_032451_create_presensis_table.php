@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('presensis', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('email');
+            $table->string('division');
             $table->string('type');
             $table->string('synchronize')->nullable()->default(null);
             $table->timestamps();

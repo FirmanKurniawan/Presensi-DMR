@@ -14,7 +14,7 @@ class PresensiController extends Controller
     public function presensi(Request $request) {
         $presensi = new Presensi;
         $presensi->name = $request->name;
-        $presensi->email = $request->email;
+        $presensi->division = $request->division;
         if($request->custom_switch_checkbox == 'on'){
             $presensi->type = 'out';
         }else{

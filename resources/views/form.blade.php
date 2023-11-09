@@ -50,29 +50,33 @@
                         </div>
                     </div>
 
-                  <div class="form-group">
-                    <label for="email">Email</label>
-                    <input id="email" type="email" class="form-control" name="email" tabindex="1" required autofocus placeholder="Insert your email">
-                    <div class="invalid-feedback">
-                      Please fill in your email
+                    <div class="form-group">
+                        <label>Divisi</label>
+                        <select class="form-control" name="division" required autofocus placeholder="Insert your division">
+                          <option>IT</option>
+                          <option>Finance</option>
+                          <option>HR</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please fill in your division
+                        </div>
                     </div>
-                  </div>
 
-                  <div class="form-group">
-                    <div class="control-label">Type</div>
-                    <label class="custom-switch mt-2">
-                      <span class="custom-switch-description">Check In &nbsp;</span>
-                      <input type="checkbox" name="custom_switch_checkbox" class="custom-switch-input">
-                      <span class="custom-switch-indicator"></span>
-                      <span class="custom-switch-description">Check Out</span>
-                    </label>
-                  </div>
+                    <div class="form-group">
+                        <div class="control-label">Type</div>
+                        <label class="custom-switch mt-2">
+                        <span class="custom-switch-description">Check In &nbsp;</span>
+                        <input type="checkbox" name="custom_switch_checkbox" class="custom-switch-input">
+                        <span class="custom-switch-indicator"></span>
+                        <span class="custom-switch-description">Check Out</span>
+                        </label>
+                    </div>
 
-                  <div class="form-group">
-                    <button type="submit" class="btn btn-primary btn-lg btn-block" tabindex="4">
-                      Submit
-                    </button>
-                  </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-lg btn-block" tabindex="4">
+                        Submit
+                        </button>
+                    </div>
 
                     @if (session('success'))
                     <div class="alert alert-success">
